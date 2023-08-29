@@ -15,4 +15,4 @@ function heavyFunction() {
     console.log("Heavy Task");
 }
 
-const throttledHeavyFunction = throttle(heavyFunction);
+const throttledHeavyFunction = throttle(heavyFunction, 500);
