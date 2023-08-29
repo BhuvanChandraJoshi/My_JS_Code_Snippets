@@ -1,4 +1,4 @@
-const debounceFunction = (func, delay) => {
+function debounce(func, delay) {
     let timer;
     return function(...args){
         clearTimeout(timer);
@@ -7,3 +7,9 @@ const debounceFunction = (func, delay) => {
         }, delay)
     }
 }
+
+function heavyFunction() {
+    console.log("Heavy Task");
+}
+
+const debouncedHeavyFunction = debounce(heavyFunction, 500);
