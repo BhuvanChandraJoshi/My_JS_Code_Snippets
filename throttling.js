@@ -10,3 +10,9 @@ function throttle(func, interval) {
         }
     }
 }
+
+function heavyFunction() {
+    console.log("Heavy Task");
+}
+
+const throttledHeavyFunction = throttle(heavyFunction);
