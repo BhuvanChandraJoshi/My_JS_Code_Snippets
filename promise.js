@@ -13,6 +13,7 @@ const promise = new Promise(func);
 promise.then(data => {
     console.log("Then");
     console.log(data);
+    return data;
 }).catch(data => {
     console.log("Catch");
     console.log(data);
