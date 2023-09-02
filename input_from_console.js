@@ -14,10 +14,15 @@ async function readInput(query) {
   });
 }
 
-async function getInput(query){
-    console.log("Enter input: ");
-    let userInput = await readInput(query);
-    console.log("Input: " + userInput);
+async function main(){
+    let name = await readInput("name: ");
+    console.log(name);
+    
+    let age = await readInput("age: ");
+    console.log(age);
+
+    let gender = await readInput("gender: ");
+    console.log(gender);
 }
 
-getInput("name: ");
+main();
